@@ -29,7 +29,7 @@
 	 	"asset/docsop.xml",
 	 	"asset/docbcp.xml",
 	 	"asset/docberita.xml",
-	 	"asset/docagenda",
+	 	"asset/docagenda.xml",
 	],
 	"installable": True,
 	"auto_install": False,
