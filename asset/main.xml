@@ -1,0 +1,147 @@
+<odoo>
+	<data>
+		<record id="action_lokasi_list" model="ir.actions.act_window">
+			<field name="name">Data Master Lokasi</field>
+			<field name="res_model">management.lokasi</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+			<p class="oe_view_nocontent_create">Click to add a Lokasi</p>
+			<p>Klik tombol Create untuk membuat Lokasi baru</p></field>
+		</record>
+		<record id="action_ruang_list" model="ir.actions.act_window">
+			<field name="name">Data Master Ruang</field>
+			<field name="res_model">management.ruang</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+			<p class="oe_view_nocontent_create">Click to add a Ruang</p>
+			<p>Klik tombol Create untuk membuat Ruang baru</p></field>
+		</record>
+		<record id="action_subruang_list" model="ir.actions.act_window">
+			<field name="name">Data Master Subruang</field>
+			<field name="res_model">management.subruang</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+			<p class="oe_view_nocontent_create">Click to add a Subruang</p>
+			<p>Klik tombol Create untuk membuat Subruang baru</p></field>
+		</record>
+		<record id="action_merk_list" model="ir.actions.act_window">
+			<field name="name">Data Master Merk</field>
+			<field name="res_model">management.merk</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Merk</p>
+				<p>Klik tombol Create untuk membuat Merk baru</p></field>
+		</record>
+		<record id="action_unit_list" model="ir.actions.act_window">
+			<field name="name">Data Master Unit</field>
+			<field name="res_model">management.unit</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Unit</p>
+				<p>Klik tombol Create untuk membuat Unit baru</p></field>
+		</record>
+		<record id="action_subunit_list" model="ir.actions.act_window">
+			<field name="name">Data Master Sub Unit</field>
+			<field name="res_model">management.subunit</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Sub Unit</p>
+				<p>Klik tombol Create untuk membuat Unit baru</p></field>
+		</record>
+		<record id="action_kodeperangkat_list" model="ir.actions.act_window">
+			<field name="name">Data Master Kode Perangkat</field>
+			<field name="res_model">management.kodeperangkat</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Kode Perangkat</p>
+				<p>Klik tombol Create untuk membuat Kode Perangkat baru</p></field>
+		</record>
+		<record id="action_kodegolperangkat_list" model="ir.actions.act_window">
+			<field name="name">Data Master Kelompok Perangkat</field>
+			<field name="res_model">management.kodegolperangkat</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Kelompok Perangkat</p>
+				<p>Klik tombol Create untuk membuat Kelompok Perangkat baru</p></field>
+		</record>
+		
+		<record id="action_perangkat_dc_list" model="ir.actions.act_window">
+			<field name="name">Management Perangkat DC</field>
+			<field name="res_model">management.perangkatdc</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Perangkat DC</p>
+				<p>Klik tombol Create untuk membuat Perangkat DC baru</p></field>
+		</record>
+		<record id="action_perangkat_non_dc_list" model="ir.actions.act_window">
+			<field name="name">Management Perangkat Non DC</field>
+			<field name="res_model">management.perangkatnondc</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Perangkat Non DC</p>
+				<p>Klik tombol Create untuk membuat Perangkat Non DC baru</p></field>
+		</record>
+		<record id="action_power_distribution_list" model="ir.actions.act_window">
+			<field name="name">Management Power Distribution</field>
+			<field name="res_model">management.powerdistribution</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Power Distribution</p>
+				<p>Klik tombol Create untuk membuat Power Distribution baru</p></field>
+		</record>
+		<record id="action_lan_distribution_list" model="ir.actions.act_window">
+			<field name="name">Management LAN Distribution</field>
+			<field name="res_model">management.landistribution</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a LAN Distribution</p>
+				<p>Klik tombol Create untuk membuat LAN Distribution baru</p></field>
+		</record>
+		<record id="action_lan_distribution_list" model="ir.actions.act_window">
+			<field name="name">Management LAN Distribution</field>
+			<field name="res_model">management.landistribution</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a LAN Distribution</p>
+				<p>Klik tombol Create untuk membuat LAN Distribution baru</p></field>
+		</record>
+		<record id="action_capacity_list" model="ir.actions.act_window">
+			<field name="name">Management Capacity</field>
+			<field name="res_model">management.capacity</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Capacity</p>
+				<p>Klik tombol Create untuk membuat Capacity baru</p></field>
+		</record>
+		<record id="action_utilisasi_perangkat_dc_list" model="ir.actions.act_window">
+			<field name="name">Management Utilisasi Perangkat DC</field>
+			<field name="res_model">management.utilisasiperangkatdc</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Utilisasi Perangkat DC</p>
+				<p>Klik tombol Create untuk membuat Utilisasi Perangkat DC baru</p></field>
+		</record>
+
+		<menuitem id="management_0" name="Management Training" sequence="20"/>
+		<menuitem id="management_asset" name="Management" parent="management_0" sequence="20"/>
+		<menuitem id="management_perangkat_dc" name="Perangkat DC" parent="management_asset" sequence="20" action="action_perangkat_dc_list"/>
+		<menuitem id="management_perangkat_non_dc" name="Perangkat Non DC" parent="management_asset" sequence="20" action="action_perangkat_non_dc_list"/>
+		<menuitem id="management_power_distribution" name="Power Distribution" parent="management_asset" sequence="20" action="action_power_distribution_list"/>
+		<menuitem id="management_lan_distribution" name="LAN Distribution" parent="management_asset" sequence="20" action="action_lan_distribution_list"/>
+		<menuitem id="management_capacity" name="Capacity" parent="management_asset" sequence="20" action="action_capacity_list"/>
+		<menuitem id="management_utilisasi_perangkat_dc" name="Utilisasi Perangkat DC" parent="management_asset" sequence="20" action="action_utilisasi_perangkat_dc_list"/>
+
+		<menuitem id="data_master" name="Data Master" parent="management_0" sequence="20"/>
+		<menuitem id="data_master_lokasi" name="Data Lokasi" parent="data_master" sequence="20" action="action_lokasi_list"/>
+		<menuitem id="data_master_ruang" name="Data Ruang" parent="data_master" sequence="20" action="action_ruang_list"/>
+		<menuitem id="data_master_subruang" name="Data Subruang" parent="data_master" sequence="20" action="action_subruang_list"/>
+		<menuitem id="data_master_merk" name="Data Merk" parent="data_master" sequence="20" action="action_merk_list"/>
+		<menuitem id="data_master_unit" name="Data Unit" parent="data_master" sequence="20" action="action_unit_list"/>
+		<menuitem id="data_master_subunit" name="Data Sub Unit" parent="data_master" sequence="20" action="action_subunit_list"/>
+		<menuitem id="data_master_kodeperangkat" name="Data Kode Perangkat" parent="data_master" sequence="20" action="action_kodeperangkat_list"/>
+		<menuitem id="data_master_kodegolperangkat" name="Data Kelompok Perangkat" parent="data_master" sequence="20" action="action_kodegolperangkat_list"/>
+
+		
+		
+	</data>
+</odoo>

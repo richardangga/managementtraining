@@ -1,0 +1,39 @@
+<odoo>
+	<data>
+		<record id="view_management_subunit_tree" model="ir.ui.view">
+			<field name="name">management.subunit.tree</field>
+			<field name="model">management.subunit</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="subunit">
+					<field name="id_subunit"/>
+					<field name="no_subunit"/>
+					<field name="nama_subunit"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_management_subunit_form" model="ir.ui.view">
+			<field name="name">management.subunit.form</field>
+			<field name="model">management.subunit</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="subunit Form">
+					<sheet>
+						<div class="oe_title">
+                            <label for="id_subunit" class="oe_edit_only" string="Kode Golongan Perangkat"/>
+                            <h1>
+                                <field name="id_subunit"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="no_subunit"/>
+                            <field name="nama_subunit"/>
+                        </group>
+                    </sheet>
+				</form>
+			</field>
+		</record>	
+	</data>
+</odoo>

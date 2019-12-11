@@ -1,0 +1,46 @@
+<odoo>
+	<data>
+		<record id="view_management_landistribution_tree" model="ir.ui.view">
+			<field name="name">management.landistribution.tree</field>
+			<field name="model">management.landistribution</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="landistribution">
+					<field name="ruang_lan"/>
+					<field name="posisi_lan"/>
+					<field name="no_regsnlan"/>
+					<field name="merk_modeltypelan"/>
+					<field name="fungsilan"/>
+					<field name="koneksilan"/>
+					<field name="distribusilan"/>
+					<field name="visitlan"/>
+					<field name="notelan"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_management_landistribution_form" model="ir.ui.view">
+			<field name="name">management.landistribution.form</field>
+			<field name="model">management.landistribution</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="landistribution Form">
+					<sheet>
+						<group>
+							<field name="ruang_lan"/>
+							<field name="posisi_lan"/>
+							<field name="no_regsnlan"/>
+							<field name="merk_modeltypelan"/>
+							<field name="fungsilan"/>
+							<field name="koneksilan"/>
+							<field name="distribusilan"/>
+							<field name="visitlan"/>
+							<field name="notelan"/>
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

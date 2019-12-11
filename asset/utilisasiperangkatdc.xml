@@ -1,0 +1,40 @@
+<odoo>
+	<data>
+		<record id="view_management_utilisasiperangkatdc_tree" model="ir.ui.view">
+			<field name="name">management.utilisasiperangkatdc.tree</field>
+			<field name="model">management.utilisasiperangkatdc</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="utilisasiperangkatdc">
+					<field name="osmerkutilisasi"/>
+					<field name="cpuutilisasi"/>
+					<field name="ramutilisasi"/>
+					<field name="diskutilisasi"/>
+					<field name="traficutilisasi"/>
+					<field name="fungsiutilisasi"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_management_utilisasiperangkatdc_form" model="ir.ui.view">
+			<field name="name">management.utilisasiperangkatdc.form</field>
+			<field name="model">management.utilisasiperangkatdc</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="utilisasiperangkatdc Form">
+					<sheet>
+						<group>
+							<field name="osmerkutilisasi"/>
+							<field name="cpuutilisasi"/>
+							<field name="ramutilisasi"/>
+							<field name="diskutilisasi"/>
+							<field name="traficutilisasi"/>
+							<field name="fungsiutilisasi"/>
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

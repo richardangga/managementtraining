@@ -1,0 +1,44 @@
+<odoo>
+	<data>
+		<record id="view_management_perangkatdc_tree" model="ir.ui.view">
+			<field name="name">management.perangkatdc.tree</field>
+			<field name="model">management.perangkatdc</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="perangkatdc">
+					<field name="skpd_pemilik"/>
+					<field name="ruang_posisi"/>
+					<field name="no_regsn"/>
+					<field name="merk_modeltype"/>
+					<field name="spesifikasi"/>
+					<field name="fungsi"/>
+					<field name="visit"/>
+					<field name="note"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_management_perangkatdc_form" model="ir.ui.view">
+			<field name="name">management.perangkatdc.form</field>
+			<field name="model">management.perangkatdc</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="perangkatdc Form">
+					<sheet>
+						<group>
+							<field name="skpd_pemilik"/>
+							<field name="ruang_posisi"/>
+							<field name="no_regsn"/>
+							<field name="merk_modeltype"/>
+							<field name="spesifikasi"/>
+							<field name="fungsi"/>
+							<field name="visit"/>
+							<field name="note"/>
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,46 @@
+<odoo>
+	<data>
+		<record id="view_management_powerdistribution_tree" model="ir.ui.view">
+			<field name="name">management.powerdistribution.tree</field>
+			<field name="model">management.powerdistribution</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="powerdistribution">
+					<field name="ruang_power"/>
+					<field name="posisi_power"/>
+					<field name="no_regsnpower"/>
+					<field name="merk_modeltypepower"/>
+					<field name="fungsipower"/>
+					<field name="koneksipower"/>
+					<field name="distribusipower"/>
+					<field name="visitpower"/>
+					<field name="notepower"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_management_powerdistribution_form" model="ir.ui.view">
+			<field name="name">management.powerdistribution.form</field>
+			<field name="model">management.powerdistribution</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="powerdistribution Form">
+					<sheet>
+						<group>
+							<field name="ruang_power"/>
+							<field name="posisi_power"/>
+							<field name="no_regsnpower"/>
+							<field name="merk_modeltypepower"/>
+							<field name="fungsipower"/>
+							<field name="koneksipower"/>
+							<field name="distribusipower"/>
+							<field name="visitpower"/>
+							<field name="notepower"/>
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,44 @@
+<odoo>
+	<data>
+		<record id="view_management_perangkatnondc_tree" model="ir.ui.view">
+			<field name="name">management.perangkatnondc.tree</field>
+			<field name="model">management.perangkatnondc</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="perangkatnondc">
+					<field name="skpd_pemiliknondc"/>
+					<field name="ruang_posisinondc"/>
+					<field name="no_regsnnondc"/>
+					<field name="merk_modeltypenondc"/>
+					<field name="spesifikasinondc"/>
+					<field name="fungsinondc"/>
+					<field name="visitnondc"/>
+					<field name="notenondc"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_management_perangkatnondc_form" model="ir.ui.view">
+			<field name="name">management.perangkatnondc.form</field>
+			<field name="model">management.perangkatnondc</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="perangkatnondc Form">
+					<sheet>
+						<group>
+							<field name="skpd_pemiliknondc"/>
+							<field name="ruang_posisinondc"/>
+							<field name="no_regsnnondc"/>
+							<field name="merk_modeltypenondc"/>
+							<field name="spesifikasinondc"/>
+							<field name="fungsinondc"/>
+							<field name="visitnondc"/>
+							<field name="notenondc"/>
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>
