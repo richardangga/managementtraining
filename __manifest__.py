@@ -24,7 +24,12 @@
 	 	"asset/powerdistribution.xml",
 	 	"asset/landistribution.xml",
 	 	"asset/capacity.xml",
-	 	"asset/utilisasiperangkatdc.xml"
+	 	"asset/utilisasiperangkatdc.xml",
+	 	"asset/docrecruitment.xml",
+	 	"asset/docsop.xml",
+	 	"asset/docbcp.xml",
+	 	"asset/docberita.xml",
+	 	"asset/docagenda",
 	],
 	"installable": True,
 	"auto_install": False,
