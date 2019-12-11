@@ -1,0 +1,38 @@
+<odoo>
+	<data>
+		<record id="view_document_sop_tree" model="ir.ui.view">
+			<field name="name">document.sop.tree</field>
+			<field name="model">document.sop</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="sop">
+					<field name="docsopcode"/>
+					<field name="docsopname"/>
+					<field name="docsopdateissue"/>
+					<field name="docsopdatereview"/>
+					<field name="docsopdaterevised"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_document_sop_form" model="ir.ui.view">
+			<field name="name">document.sop.form</field>
+			<field name="model">document.sop</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="sop Form">
+					<sheet>
+						<group>
+							<field name="docsopcode"/>
+							<field name="docsopname"/>
+							<field name="docsopdateissue"/>
+							<field name="docsopdatereview"/>
+							<field name="docsopdaterevised"/>						
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

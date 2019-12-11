@@ -1,0 +1,48 @@
+<odoo>
+	<data>
+		<record id="view_document_recruitment_tree" model="ir.ui.view">
+			<field name="name">document.recruitment.tree</field>
+			<field name="model">document.recruitment</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="recruitment">
+					<field name="docrecnama"/>
+					<field name="docreckode"/>
+					<field name="docreckelamin"/>
+					<field name="docrecusia"/>
+					<field name="docrecpendidikan"/>
+					<field name="docrectelp"/>
+					<field name="docrecemail"/>
+					<field name="docrecfile"/>
+					<field name="docrecpengalaman"/>
+					<field name="docreccatatan"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_document_recruitment_form" model="ir.ui.view">
+			<field name="name">document.recruitment.form</field>
+			<field name="model">document.recruitment</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="recruitment Form">
+					<sheet>
+						<group>
+							<field name="docrecnama"/>
+							<field name="docreckode"/>
+							<field name="docreckelamin"/>
+							<field name="docrecusia"/>
+							<field name="docrecpendidikan"/>
+							<field name="docrectelp"/>
+							<field name="docrecemail"/>
+							<field name="docrecfile"/>
+							<field name="docrecpengalaman"/>
+							<field name="docreccatatan"/>
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

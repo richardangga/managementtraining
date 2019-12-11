@@ -1,0 +1,44 @@
+	<odoo>
+	<data>
+		<record id="view_management_datauser_tree" model="ir.ui.view">
+			<field name="name">management.datauser.tree</field>
+			<field name="model">management.datauser</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="datauser">
+					<field name="username_data"/>
+					<field name="identitas_data"/>
+					<field name="namalengkap_data"/>
+					<field name="level_data"/>
+					<field name="blokir_data"/>
+					<field name="pemandu_data"/>
+					<field name="pengelola_data"/>
+					<field name="tempadmin_data"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_management_datauser_form" model="ir.ui.view">
+			<field name="name">management.datauser.form</field>
+			<field name="model">management.datauser</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="datauser Form">
+					<sheet>
+						<group>
+							<field name="username_data"/>
+							<field name="identitas_data"/>
+							<field name="namalengkap_data"/>
+							<field name="level_data"/>
+							<field name="blokir_data"/>
+							<field name="pemandu_data"/>
+							<field name="pengelola_data"/>
+							<field name="tempadmin_data"/>
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

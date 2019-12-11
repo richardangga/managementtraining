@@ -1,0 +1,34 @@
+<odoo>
+	<data>
+		<record id="view_document_agenda_tree" model="ir.ui.view">
+			<field name="name">document.agenda.tree</field>
+			<field name="model">document.agenda</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="agenda">
+					<field name="docagendatema"/>
+					<field name="docagendamulai"/>
+					<field name="docagendaselesai"/>
+			</tree>
+			</field>
+		</record>
+		<record id="view_document_agenda_form" model="ir.ui.view">
+			<field name="name">document.agenda.form</field>
+			<field name="model">document.agenda</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="agenda Form">
+					<sheet>
+						<group>
+							<field name="docagendatema"/>
+							<field name="docagendamulai"/>
+							<field name="docagendaselesai"/>				
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

@@ -1,5 +1,13 @@
 <odoo>
 	<data>
+		<record id="action_data_user_list" model="ir.actions.act_window">
+			<field name="name">Data Master User</field>
+			<field name="res_model">management.datauser</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+			<p class="oe_view_nocontent_create">Click to add a User</p>
+			<p>Klik tombol Create untuk membuat User baru</p></field>
+		</record>
 		<record id="action_lokasi_list" model="ir.actions.act_window">
 			<field name="name">Data Master Lokasi</field>
 			<field name="res_model">management.lokasi</field>
@@ -122,6 +130,47 @@
 				<p>Klik tombol Create untuk membuat Utilisasi Perangkat DC baru</p></field>
 		</record>
 
+		<record id="action_recruitment_list" model="ir.actions.act_window">
+			<field name="name">Document Recruitment</field>
+			<field name="res_model">document.recruitment</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a New Recruitment</p>
+				<p>Klik tombol Create untuk membuat Calon Recruitment baru</p></field>
+		</record>
+		<record id="action_sop_list" model="ir.actions.act_window">
+			<field name="name">Document SOP</field>
+			<field name="res_model">document.sop</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a SOP</p>
+				<p>Klik tombol Create untuk membuat SOP baru</p></field>
+		</record>
+		<record id="action_bcp_list" model="ir.actions.act_window">
+			<field name="name">Document BCP</field>
+			<field name="res_model">document.bcp</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a BCP</p>
+				<p>Klik tombol Create untuk membuat BCP baru</p></field>
+		</record>
+		<record id="action_berita_list" model="ir.actions.act_window">
+			<field name="name">Document Berita</field>
+			<field name="res_model">document.berita</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Berita</p>
+				<p>Klik tombol Create untuk membuat Berita baru</p></field>
+		</record>
+		<record id="action_agenda_list" model="ir.actions.act_window">
+			<field name="name">Document Agenda</field>
+			<field name="res_model">document.agenda</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Click to add a Agenda</p>
+				<p>Klik tombol Create untuk membuat Agenda baru</p></field>
+		</record>
+
 		<menuitem id="management_0" name="Management Training" sequence="20"/>
 		<menuitem id="management_asset" name="Management" parent="management_0" sequence="20"/>
 		<menuitem id="management_perangkat_dc" name="Perangkat DC" parent="management_asset" sequence="20" action="action_perangkat_dc_list"/>
@@ -132,6 +181,7 @@
 		<menuitem id="management_utilisasi_perangkat_dc" name="Utilisasi Perangkat DC" parent="management_asset" sequence="20" action="action_utilisasi_perangkat_dc_list"/>
 
 		<menuitem id="data_master" name="Data Master" parent="management_0" sequence="20"/>
+		<menuitem id="data_master_data_user" name="Data User" parent="data_master" sequence="20" action="action_data_user_list"/>
 		<menuitem id="data_master_lokasi" name="Data Lokasi" parent="data_master" sequence="20" action="action_lokasi_list"/>
 		<menuitem id="data_master_ruang" name="Data Ruang" parent="data_master" sequence="20" action="action_ruang_list"/>
 		<menuitem id="data_master_subruang" name="Data Subruang" parent="data_master" sequence="20" action="action_subruang_list"/>
@@ -141,7 +191,12 @@
 		<menuitem id="data_master_kodeperangkat" name="Data Kode Perangkat" parent="data_master" sequence="20" action="action_kodeperangkat_list"/>
 		<menuitem id="data_master_kodegolperangkat" name="Data Kelompok Perangkat" parent="data_master" sequence="20" action="action_kodegolperangkat_list"/>
 
-		
+		<menuitem id="document" name="Document" parent="management_0" sequence="20"/>
+		<menuitem id="document_recruitment" name="Document Recruitment" parent="document" sequence="20" action="action_recruitment_list"/>
+		<menuitem id="document_sop" name="Document SOP" parent="document" sequence="20" action="action_sop_list"/>
+		<menuitem id="document_bcp" name="Document BCP" parent="document" sequence="20" action="action_bcp_list"/>
+		<menuitem id="document_berita" name="Document Berita" parent="document" sequence="20" action="action_berita_list"/>
+		<menuitem id="document_agenda" name="Document Agenda" parent="document" sequence="20" action="action_agenda_list"/>
 		
 	</data>
 </odoo>

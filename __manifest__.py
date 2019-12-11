@@ -10,6 +10,7 @@
 		"security/security.xml",
 		"security/ir.model.access.csv",
 		"asset/main.xml",
+		"asset/datauser.xml",
 	 	"asset/lokasi.xml",
 	 	"asset/ruang.xml",
 	 	"asset/subruang.xml",

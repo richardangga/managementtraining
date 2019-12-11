@@ -1,0 +1,38 @@
+<odoo>
+	<data>
+		<record id="view_document_bcp_tree" model="ir.ui.view">
+			<field name="name">document.bcp.tree</field>
+			<field name="model">document.bcp</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="bcp">
+					<field name="docbcpcode"/>
+					<field name="docbcpname"/>
+					<field name="docbcpdateissue"/>
+					<field name="docbcpdatereview"/>
+					<field name="docbcpdaterevised"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_document_bcp_form" model="ir.ui.view">
+			<field name="name">document.bcp.form</field>
+			<field name="model">document.bcp</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="bcp Form">
+					<sheet>
+						<group>
+							<field name="docbcpcode"/>
+							<field name="docbcpname"/>
+							<field name="docbcpdateissue"/>
+							<field name="docbcpdatereview"/>
+							<field name="docbcpdaterevised"/>						
+						</group>					
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

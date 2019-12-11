@@ -1,6 +1,18 @@
 from odoo import api, fields, models, _
 import time
 
+class Datauser(models.Model):
+	_name = 'management.datauser'
+
+	username_data = fields.Char(string="Username",required=True)
+	identitas_data = fields.Integer(string="Identitas",required=False)
+	namalengkap_data = fields.Char(string="Nama Lengkap",required=False)
+	level_data = fields.Char(string="Level",required=False)
+	blokir_data = fields.Char(string="Blokir",required=True)
+	pemandu_data = fields.Char(string="Pemandu",required=False)
+	pengelola_data = fields.Char(string="Pengelola",required=True)
+	tempadmin_data = fields.Char(string="Temp Admin",required=False)
+
 class Lokasi(models.Model):
 	_name = 'management.lokasi'
 	_rec_name = 'lokasi'
@@ -64,10 +76,10 @@ class PerangkatDC(models.Model):
 	ruang_posisi = fields.Char(string="Ruang/Posisi",required=True)
 	no_regsn = fields.Char(string="No.Reg/SN/SP",required=True)
 	merk_modeltype = fields.Char(string="Merk/Model/Type",required=True)
-	spesifikasi = fields.Char(string="Spesifikasi",required=True)
-	fungsi = fields.Char(string="Fungsi",required=True)
+	spesifikasi = fields.Char(string="Spesifikasi",required=False)
+	fungsi = fields.Char(string="Fungsi",required=False)
 	visit = fields.Integer(string="Visit",required=True)
-	note = fields.Char(string="Note",required=True)
+	note = fields.Char(string="Note",required=False)
 
 class PerangkatNonDC(models.Model):
 	_name = 'management.perangkatnondc'
@@ -76,10 +88,10 @@ class PerangkatNonDC(models.Model):
 	ruang_posisinondc = fields.Char(string="Ruang/Posisi",required=True)
 	no_regsnnondc = fields.Char(string="No.Reg/SN",required=True)
 	merk_modeltypenondc = fields.Char(string="Merk/Model/Type",required=True)
-	spesifikasinondc = fields.Char(string="Spesifikasi",required=True)
-	fungsinondc = fields.Char(string="Fungsi",required=True)
+	spesifikasinondc = fields.Char(string="Spesifikasi",required=False)
+	fungsinondc = fields.Char(string="Fungsi",required=False)
 	visitnondc = fields.Integer(string="Visit",required=True)
-	notenondc = fields.Char(string="Note",required=True)
+	notenondc = fields.Char(string="Note",required=False)
 
 class PowerDistribution(models.Model):
 	_name = 'management.powerdistribution'
@@ -92,7 +104,7 @@ class PowerDistribution(models.Model):
 	koneksipower = fields.Char(string="Koneksi Listrik",required=True)
 	distribusipower = fields.Integer(string="Distribusi",required=True)
 	visitpower = fields.Integer(string="Visit",required=True)
-	notepower = fields.Char(string="Note",required=True)
+	notepower = fields.Char(string="Note",required=False)
 
 class LanDistribution(models.Model):
 	_name = 'management.landistribution'
@@ -100,12 +112,12 @@ class LanDistribution(models.Model):
 	ruang_lan = fields.Char(string="Ruang",required=True)
 	posisi_lan = fields.Char(string="Posisi",required=True)
 	no_regsnlan = fields.Char(string="No.Reg/SN",required=True)
-	merk_modeltypelan = fields.Char(string="Merk/Model/Type",required=True)
-	fungsilan = fields.Char(string="Fungsi",required=True)
-	koneksilan = fields.Char(string="Koneksi LAN",required=True)
+	merk_modeltypelan = fields.Char(string="Merk/Model/Type",required=False)
+	fungsilan = fields.Char(string="Fungsi",required=False)
+	koneksilan = fields.Char(string="Koneksi LAN",required=False)
 	distribusilan = fields.Integer(string="Distribusi",required=True)
 	visitlan = fields.Integer(string="Visit",required=True)
-	notelan = fields.Char(string="Note",required=True)
+	notelan = fields.Char(string="Note",required=False)
 
 class Capacity(models.Model):
 	_name = 'management.capacity'
@@ -123,3 +135,50 @@ class UtilisasiPerangkatDC(models.Model):
 	diskutilisasi = fields.Char(string="DISK",required=True)
 	traficutilisasi = fields.Integer(string="Traffic In/Out",required=True)
 	fungsiutilisasi = fields.Char(string="Fungsi/Note",required=True)
+
+class DocumentRecruitment(models.Model):
+	_name = 'document.recruitment'
+
+	docrecnama = fields.Char(string="Nama",required=True)
+	docreckode = fields.Char(string="Kode",required=True)
+	docreckelamin = fields.Char(string="Kelamin",required=True)
+	docrecusia = fields.Char(string="Usia",required=True)
+	docrecpendidikan = fields.Char(string="Pendidikan",required=True)
+	docrectelp = fields.Char(string="Telp/HP",required=True)
+	docrecemail = fields.Char(string="Email",required=True)
+	docrecfile = fields.Char(string="File",required=True)
+	docrecpengalaman = fields.Char(string="Pengalaman",required=True)
+	docreccatatan = fields.Char(string="Catatan",required=True)
+
+class DocumentSop(models.Model):
+	_name = 'document.sop'
+
+	docsopcode = fields.Char(string="Code",required=True)
+	docsopname = fields.Char(string="SOP Name",required=True)
+	docsopdateissue = fields.Char(string="Date Issued",required=False)
+	docsopdatereview = fields.Char(string="Date Reviewed",required=False)
+	docsopdaterevised = fields.Char(string="Date Revised",required=False)
+
+class DocumentBcp(models.Model):
+	_name = 'document.bcp'
+
+	docbcpcode = fields.Char(string="Code",required=True)
+	docbcpname = fields.Char(string="BCP Name",required=True)
+	docbcpdateissue = fields.Char(string="Date Issued",required=False)
+	docbcpdatereview = fields.Char(string="Date Reviewed",required=False)
+	docbcpdaterevised = fields.Char(string="Date Revised",required=False)
+
+class DocumentBerita(models.Model):
+	_name = 'document.berita'
+
+	docberitajudul = fields.Char(string="Judul",required=True)
+	docberitaposting = fields.Char(string="Tgl Posting",required=True)
+	docberitapublish = fields.Char(string="Publish",required=True)
+
+class DocumentAgenda(models.Model):
+	_name = 'document.agenda'
+
+	docagendatema = fields.Char(string="Tema",required=True)
+	docagendamulai = fields.Char(string="Tgl Mulai",required=True)
+	docagendaselesai = fields.Char(string="Tgl Selesai",required=True)
+	
