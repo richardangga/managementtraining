@@ -21,8 +21,13 @@
 			<field name="arch" type="xml">
 				<form string="berita Form">
 					<sheet>
+						<div class="oe_title">
+							<label for="docberitajudul" class="oe_edit_only" string="Code"/>
+							<h1>
+								<field name="docberitajudul"/>
+							</h1>
+						</div>
 						<group>
-							<field name="docberitajudul"/>
 							<field name="docberitaposting"/>
 							<field name="docberitapublish"/>					
 						</group>					

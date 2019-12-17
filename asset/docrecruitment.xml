@@ -14,7 +14,7 @@
 					<field name="docrecpendidikan"/>
 					<field name="docrectelp"/>
 					<field name="docrecemail"/>
-					<field name="docrecfile"/>
+					<field name="docnamefile"/>
 					<field name="docrecpengalaman"/>
 					<field name="docreccatatan"/>
 				</tree>
@@ -28,18 +28,27 @@
 			<field name="arch" type="xml">
 				<form string="recruitment Form">
 					<sheet>
+						<div class="oe_title">
+							<label for="docrecnama" class="oe_edit_only" string="Nama"/>
+							<h1>
+								<field name="docrecnama"/>
+							</h1>
+						</div>
 						<group>
-							<field name="docrecnama"/>
 							<field name="docreckode"/>
 							<field name="docreckelamin"/>
 							<field name="docrecusia"/>
 							<field name="docrecpendidikan"/>
 							<field name="docrectelp"/>
 							<field name="docrecemail"/>
-							<field name="docrecfile"/>
+							<field name="docrecfile" filename="docnamefile"/>
 							<field name="docrecpengalaman"/>
-							<field name="docreccatatan"/>
 						</group>					
+						<notebook>
+							<page string="Catatan">
+								<field name="docreccatatan"/>
+							</page>
+						</notebook>
 					</sheet>
 				</form>
 			</field>

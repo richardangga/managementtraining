@@ -21,8 +21,13 @@
 			<field name="arch" type="xml">
 				<form string="agenda Form">
 					<sheet>
+						<div class="oe_title">
+							<label for="docagendatema" class="oe_edit_only" string="Code"/>
+							<h1>
+								<field name="docagendatema"/>
+							</h1>
+						</div>
 						<group>
-							<field name="docagendatema"/>
 							<field name="docagendamulai"/>
 							<field name="docagendaselesai"/>				
 						</group>					

@@ -67,8 +67,6 @@ class KodeGolPerangkat(models.Model):
 	no_kelperangkat =  fields.Integer(string="No Kelompok Perangkat",required=True)
 	nama_kelperangkat = fields.Char(string="Nama Kelompok Perangkat",required=True)
 
-
-
 class PerangkatDC(models.Model):
 	_name = 'management.perangkatdc'
 
@@ -129,12 +127,12 @@ class Capacity(models.Model):
 class UtilisasiPerangkatDC(models.Model):
 	_name = 'management.utilisasiperangkatdc'
 
-	osmerkutilisasi = fields.Char(string="OS/Merk/Model/Type/IP",required=True)
-	cpuutilisasi = fields.Char(string="CPU",required=True)
+	osmerkutilisasi = fields.Text(string="OS/Merk/Model/Type/IP",required=True)
+	cpuutilisasi = fields.Integer(string="CPU",required=True)
 	ramutilisasi = fields.Char(string="RAM",required=True)
 	diskutilisasi = fields.Char(string="DISK",required=True)
 	traficutilisasi = fields.Integer(string="Traffic In/Out",required=True)
-	fungsiutilisasi = fields.Char(string="Fungsi/Note",required=True)
+	fungsiutilisasi = fields.Text(string="Fungsi/Note",required=False)
 
 class DocumentRecruitment(models.Model):
 	_name = 'document.recruitment'
@@ -146,9 +144,10 @@ class DocumentRecruitment(models.Model):
 	docrecpendidikan = fields.Char(string="Pendidikan",required=True)
 	docrectelp = fields.Char(string="Telp/HP",required=True)
 	docrecemail = fields.Char(string="Email",required=True)
-	docrecfile = fields.Char(string="File",required=True)
+	docnamefile = fields.Char(string="File Name")
+	docrecfile = fields.Binary(string="File",required=False)
 	docrecpengalaman = fields.Selection(string="Pengalaman",selection=[('Y','Yes'),('N','No')],default='N',required=True)
-	docreccatatan = fields.Char(string="Catatan",required=True)
+	docreccatatan = fields.Text(string="Catatan",required=False)
 
 class DocumentSop(models.Model):
 	_name = 'document.sop'

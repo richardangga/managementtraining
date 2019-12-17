@@ -22,8 +22,13 @@
 			<field name="arch" type="xml">
 				<form string="capacity Form">
 					<sheet>
+						<div class="oe_title">
+							<label for="rack_capacity" class="oe_edit_only" string="Rack"/>
+							<h1>
+								<field name="rack_capacity"/>
+							</h1>
+						</div>
 						<group>
-							<field name="rack_capacity"/>
 							<field name="used_capacity"/>
 							<field name="available_capacity"/>
 						</group>					

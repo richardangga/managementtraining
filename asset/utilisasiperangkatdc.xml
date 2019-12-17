@@ -8,7 +8,7 @@
 			<field name="arch" type="xml">
 				<tree string="utilisasiperangkatdc">
 					<field name="osmerkutilisasi"/>
-					<field name="cpuutilisasi"/>
+					<field name="cpuutilisasi" string="Total :"/>
 					<field name="ramutilisasi"/>
 					<field name="diskutilisasi"/>
 					<field name="traficutilisasi"/>
@@ -24,14 +24,23 @@
 			<field name="arch" type="xml">
 				<form string="utilisasiperangkatdc Form">
 					<sheet>
+						<div class="oe_title">
+							<label for="osmerkutilisasi" class="oe_edit_only" string="OS/Merk/Model/Type/IP"/>
+							<h1>
+								<field name="osmerkutilisasi"/>
+							</h1>
+						</div>
 						<group>
-							<field name="osmerkutilisasi"/>
 							<field name="cpuutilisasi"/>
 							<field name="ramutilisasi"/>
 							<field name="diskutilisasi"/>
 							<field name="traficutilisasi"/>
-							<field name="fungsiutilisasi"/>
-						</group>					
+						</group>	
+						<notebook>
+							<page string="Fungsi/Note">
+								<field name="fungsiutilisasi"/>
+							</page>
+						</notebook>				
 					</sheet>
 				</form>
 			</field>
