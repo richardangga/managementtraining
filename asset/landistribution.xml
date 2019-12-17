@@ -27,17 +27,34 @@
 			<field name="arch" type="xml">
 				<form string="landistribution Form">
 					<sheet>
+						<div class="oe_title">
+							<label for="ruang_lan" string="Ruang" class="oe_edit_only"/>
+							<h1>
+								<field name="ruang_lan"/>
+							</h1>
+						</div>
 						<group>
-							<field name="ruang_lan"/>
 							<field name="posisi_lan"/>
 							<field name="no_regsnlan"/>
-							<field name="merk_modeltypelan"/>
-							<field name="fungsilan"/>
 							<field name="koneksilan"/>
 							<field name="distribusilan"/>
 							<field name="visitlan"/>
-							<field name="notelan"/>
-						</group>					
+						</group>
+						<notebook>		
+							<page string="Merk/Model/Type">
+								<field name="merk_modeltypelan"/>
+							</page>
+						</notebook>
+						<notebook>
+							<page string="Fungsi">
+								<field name="fungsilan"/>
+							</page>
+						</notebook>
+						<notebook>
+							<page string="Note">
+								<field name="notelan"/>
+							</page>			
+						</notebook>
 					</sheet>
 				</form>
 			</field>

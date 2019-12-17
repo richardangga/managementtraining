@@ -9,7 +9,7 @@
 				<tree string="kodeperangkat">
 					<!-- <field name="id_subunit"/> -->
 					<field name="no_perangkat"/>
-					<field name="gol_perangkat"/>
+					<field name="name"/>
 				</tree>
 			</field>
 		</record>
@@ -29,7 +29,7 @@
                         </div>
                         <group>
                             <!-- <field name="no_subunit"/> -->
-                            <field name="gol_perangkat"/>
+                            <field name="name"/>
                         </group>
                     </sheet>
 				</form>

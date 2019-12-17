@@ -6,6 +6,7 @@
 			<field name="type">tree</field>
 			<field name="priority" eval="8"/>
 			<field name="arch" type="xml">
+				
 				<tree string="capacity">
 					<field name="rack_capacity"/>
 					<field name="used_capacity"/>

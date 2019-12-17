@@ -26,16 +26,33 @@
 			<field name="arch" type="xml">
 				<form string="perangkatdc Form">
 					<sheet>
+						<div class="oe_title">
+							<label for="skpd_pemilik" class="oe_edit_only" string="SKPD/UKPD/Pemilik/Penanggung Jawab"/>
+							<h1>
+								<field name="skpd_pemilik"/>
+							</h1>
+						</div>
 						<group>
-							<field name="skpd_pemilik"/>
 							<field name="ruang_posisi"/>
 							<field name="no_regsn"/>
 							<field name="merk_modeltype"/>
-							<field name="spesifikasi"/>
-							<field name="fungsi"/>
 							<field name="visit"/>
-							<field name="note"/>
-						</group>					
+						</group>	
+						<notebook>
+							<page string="Spesifikasi">
+								<field name="spesifikasi"/>
+							</page>				
+						</notebook>
+						<notebook>
+							<page string="Fungsi">
+								<field name="fungsi"/>
+							</page>
+						</notebook>
+						<notebook>
+							<page string="Note">
+								<field name="note"/>
+							</page>
+						</notebook>
 					</sheet>
 				</form>
 			</field>

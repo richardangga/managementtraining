@@ -9,7 +9,7 @@
 				<tree string="ruang">
 					<field name="id_lokasi"/>
 					<field name="no_ruang"/>
-					<field name="nama_ruang"/>
+					<field name="name"/>
 				</tree>
 			</field>
 		</record>
@@ -29,7 +29,7 @@
                         </div>
                         <group>
                             <field name="no_ruang"/>
-                            <field name="nama_ruang"/>
+                            <field name="name"/>
                         </group>
                     </sheet>
                 </form>

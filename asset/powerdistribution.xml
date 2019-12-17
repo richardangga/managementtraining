@@ -27,17 +27,34 @@
 			<field name="arch" type="xml">
 				<form string="powerdistribution Form">
 					<sheet>
+						<div class="oe_title">
+							<label for="ruang_power" string="Ruang" class="oe_edit_only"/>
+							<h1>
+								<field name="ruang_power"/>
+							</h1>
+						</div>
 						<group>
-							<field name="ruang_power"/>
 							<field name="posisi_power"/>
 							<field name="no_regsnpower"/>
-							<field name="merk_modeltypepower"/>
-							<field name="fungsipower"/>
 							<field name="koneksipower"/>
 							<field name="distribusipower"/>
 							<field name="visitpower"/>
-							<field name="notepower"/>
-						</group>					
+						</group>
+						<notebook>
+							<page string="Merk/Model/Type">
+								<field name="merk_modeltypepower"/>
+							</page>
+						</notebook>
+						<notebook>
+							<page string="Fungsi">
+								<field name="fungsipower"/>
+							</page>
+						</notebook>
+						<notebook>
+							<page string="Note">
+								<field name="notepower"/>
+							</page>
+						</notebook>					
 					</sheet>
 				</form>
 			</field>

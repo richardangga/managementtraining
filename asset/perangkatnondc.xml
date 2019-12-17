@@ -26,16 +26,33 @@
 			<field name="arch" type="xml">
 				<form string="perangkatnondc Form">
 					<sheet>
-						<group>
-							<field name="skpd_pemiliknondc"/>
+						<div class="oe_title">
+							<label for="skpd_pemiliknondc" class="oe_edit_only" string="SKPD/UKPD/Pemilik/Penanggung Jawab"/>
+							<h1>
+								<field name="skpd_pemiliknondc"/>
+							</h1>
+						</div>
+						<group>				
 							<field name="ruang_posisinondc"/>
 							<field name="no_regsnnondc"/>
 							<field name="merk_modeltypenondc"/>
-							<field name="spesifikasinondc"/>
-							<field name="fungsinondc"/>
 							<field name="visitnondc"/>
-							<field name="notenondc"/>
-						</group>					
+						</group>	
+						<notebook>
+							<page string="Spesifikasi">
+								<field name="spesifikasinondc"/>
+							</page>	
+						</notebook>
+						<notebook>
+							<page string="fungsi">
+								<field name="fungsinondc"/>
+							</page>
+						</notebook>
+						<notebook>
+								<page string="Note">
+									<field name="notenondc"/>
+								</page>
+						</notebook>				
 					</sheet>
 				</form>
 			</field>
